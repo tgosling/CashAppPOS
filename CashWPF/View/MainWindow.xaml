@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CashWPF"
         mc:Ignorable="d"
-        Title="Point of Sale" Height="420" Width="700">
+        Title="Point of Sale" Height="450" Width="700">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
@@ -111,6 +111,7 @@
                 <Button x:Name="btn14" Height="40" Width="70" Margin="5" Background="Yellow" >
                     <TextBlock Text="Youth Transit Pass" TextWrapping="Wrap" TextAlignment="Center"/>
                 </Button>
+                <TextBox Width="300" Margin="10"/>
             </WrapPanel>
             <StackPanel Grid.Column="1">
                 <DataGrid x:Name="dgTransacWin" ItemsSource="{Binding TransacItem}" Height="80" Margin="0,0,0,5">
@@ -133,7 +134,8 @@
                     <Label Content="Due:" Margin="0,0,5,0"/>
                     <TextBox Width="120"/>
                 </WrapPanel>
-                <WrapPanel Grid.Column="1" Width="175" Height="175" HorizontalAlignment="Left" Margin="10">
+                <WrapPanel>
+                <WrapPanel Grid.Column="1" Width="175" Height="200" HorizontalAlignment="Left" Margin="10">
                     <Button x:Name="btnSev" Content="7" FontSize="16" Height="40" Width="40" Margin="1.5"/>
                     <Button x:Name="btnEigh" Content="8" FontSize="16" Height="40" Width="40" Margin="1.5"/>
                     <Button x:Name="btnNine" Content="9" FontSize="16" Height="40" Width="40"  Margin="1.5"/>
@@ -150,6 +152,22 @@
                     <Button x:Name="btnDblZero" Content="00" FontSize="16" Height="40" Width="40" Margin="1.5"/>
                     <Button x:Name="btnDecNP" Content="." FontSize="16" Height="40" Width="40" Margin="1.5"/>
                     <Button x:Name="btnEntNP" Content="Enter" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                        <TextBox x:Name="tbUserIn" Width="170" Height="20" HorizontalAlignment="Center"/>
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="1" Width="150" Height="200" Margin="10">
+                        <Button x:Name="btnNoSale" Content="NO SALE" Height="35" Width="65" Margin="5,0,5,0"/>
+                        <Button x:Name="btnUSCash" Content="US Cash" Height="35" Width="65" Margin="5,0,5,0" Background="LawnGreen"/>
+                        <Button x:Name="btnBlank" Content="" Height="35" Width="65" Margin="5,5,5,0"/>
+                        <Button x:Name="btnAmEx" Content="AmEx" Height="35" Width="65" Margin="5,5,5,0" Background="LawnGreen"/>
+                        <Button x:Name="btnMasCard" Height="35" Width="65" Margin="5,5,5,0" Background="LawnGreen">
+                            <TextBlock Text="Master Card" TextWrapping="Wrap" TextAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="btnVisa" Content="Visa" Height="35" Width="65" Margin="5,5,5,0" Background="LawnGreen"/>
+                        <Button x:Name="btnDebit" Content="Debit" Height="35" Width="65" Margin="5,5,5,0" Background="LawnGreen"/>
+                        <Button x:Name="btnChq" Content="Cheque" Height="35" Width="65" Margin="5,5,5,0" Background="LawnGreen"/>
+                        <Button x:Name="btnGiftCard" Content="Gift Card" Height="35" Width="65" Margin="5,5,5,0" Background="LawnGreen"/>
+                        <Button x:Name="btnCash" Content="Cash" Height="35" Width="65" Margin="5,5,5,0" Background="LawnGreen"/>
+                    </WrapPanel>
                 </WrapPanel>
             </StackPanel>
         </Grid>
