@@ -1,0 +1,157 @@
+﻿<Window x:Class="CashWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CashWPF"
+        mc:Ignorable="d"
+        Title="Point of Sale" Height="420" Width="700">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+             
+            </MenuItem>
+            <MenuItem Header="_Reports">
+              
+            </MenuItem>
+            <MenuItem Header="_Modules">
+                <MenuItem Header="_About" />
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About"/>
+            </MenuItem>
+        </Menu>
+        <Grid Background="WhiteSmoke">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="320"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <WrapPanel>
+                <Button x:Name="btnClienSrch" Height="40" Width="70" Margin="5" Background="Red">
+                    <TextBlock Text="Client Search" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnBalOnAcc" Height="40" Width="70" Margin="5" Background="Red">
+                    <TextBlock Text="Balance on Account" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnCredAcc" Height="40" Width="70" Margin="5" Background="Red">
+                    <TextBlock Text="Credit Account" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnPayLink" Height="40" Width="70" Margin="5" Background="Red">
+                    <TextBlock Text="Payment Linking" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnHoldRecall" Height="40" Width="70" Margin="5" >
+                    <TextBlock Text="Hold/Recall" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnCancTrans" Height="40" Width="70" Margin="5" >
+                    <TextBlock Text="Cancel Transaction" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn" Height="40" Width="70" Margin="5" >
+                    <TextBlock Text="Void Item" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnPrintRec" Height="40" Width="70" Margin="5" >
+                    <TextBlock Text="Print Receipt" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnPostTran" Height="40" Width="70" Margin="5" >
+                    <TextBlock Text="Post Transaction" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnGiftCBal" Height="40" Width="70" Margin="5" >
+                    <TextBlock Text="Gift Card Balance" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnGiftCSal" Height="40" Width="70" Margin="5" Background="Lavender">
+                    <TextBlock Text="Gift Card Sale" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnLkUp" Height="40" Width="70" Margin="5" >
+                    <TextBlock Text="LOOKUP" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn1" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="AQUAFIT Adult" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn2" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="FIT LANES Adult" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn3" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="REC SWIM Adult" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn4" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="REC SWIM Child" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn5" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="AQUAFIT Senior" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn6" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="FIT LANES Senior" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn7" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="REC SWIM Senior" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn8" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="REC SWIM Family" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn9" Height="40" Width="70" Margin="5"  >
+                    <TextBlock Text="COMP PASS" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn10" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="Combo Lock SALE" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn11" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="TOONIE SWIM" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn12" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="Subsidized Transit Pass" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnE1" Height="40" Width="70" Margin="5">
+                    <TextBlock Text="" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btnE2" Height="40" Width="70" Margin="5" >
+                    <TextBlock Text="" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn13" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="Garbage Tags" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+                <Button x:Name="btn14" Height="40" Width="70" Margin="5" Background="Yellow" >
+                    <TextBlock Text="Youth Transit Pass" TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+            </WrapPanel>
+            <StackPanel Grid.Column="1">
+                <DataGrid x:Name="dgTransacWin" ItemsSource="{Binding TransacItem}" Height="80" Margin="0,0,0,5">
+                    <DataGrid.Columns>
+                        
+                    </DataGrid.Columns>
+                </DataGrid>
+                <DataGrid x:Name="dgPaymentWin" ItemsSource="{Binding TransacItem}" Height="40" Margin="0,0,0,5">>
+                    <DataGrid.Columns>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+                <WrapPanel Grid.Column="1" Width="320">
+                    <Label Content="Tax:" Margin="0,0,13,0"/>
+                    <TextBox Width="100"/>
+                    <Label Content="Paid: "/>
+                    <TextBox Width="120"/>
+                    <Label Content="Total:" FontWeight="Bold"/>
+                    <TextBox Width="100"/>
+                    <Label Content="Due:" Margin="0,0,5,0"/>
+                    <TextBox Width="120"/>
+                </WrapPanel>
+                <WrapPanel Grid.Column="1" Width="175" Height="175" HorizontalAlignment="Left" Margin="10">
+                    <Button x:Name="btnSev" Content="7" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnEigh" Content="8" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnNine" Content="9" FontSize="16" Height="40" Width="40"  Margin="1.5"/>
+                    <Button x:Name="btnEscNP" Content="Esc" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnFour" Content="4" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnFive" Content="5" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnSix" Content="6" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnBackNP" Content="Back" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnOne" Content="1" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnTwo" Content="2" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnThree" Content="3" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnX" Content="X" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnZero" Content="0" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnDblZero" Content="00" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnDecNP" Content="." FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                    <Button x:Name="btnEntNP" Content="Enter" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                </WrapPanel>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>

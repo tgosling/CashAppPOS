@@ -1,0 +1,15 @@
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\bin\Debug\CashWPF.exe.config
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\bin\Debug\CashWPF.exe
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\bin\Debug\CashWPF.pdb
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\CashWPF.csprojAssemblyReference.cache
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\App.g.cs
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\CashWPF_MarkupCompile.cache
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\CashWPF_MarkupCompile.lref
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\CashWPF.g.resources
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\CashWPF.Properties.Resources.resources
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\CashWPF.csproj.GenerateResource.cache
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\CashWPF.csproj.CoreCompileInputs.cache
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\CashWPF.exe
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\CashWPF.pdb
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\View\MainWindow.g.cs
+D:\Documents\School\2019Level5WinterTerm\DefaultWorkspace\CashWPF\CashWPF\obj\Debug\View\MainWindow.baml
