@@ -30,5 +30,10 @@ namespace CashWPF
             Button b = (Button)sender;
             tbUserCurr.Text += b.Content.ToString();
         }
+
+        private void PadEscClick(object sender, RoutedEventArgs e)
+        {
+            tbUserCurr.Text = "";
+        }
     }
 }

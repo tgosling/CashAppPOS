@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CashWPF"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
         Title="Point of Sale" Height="450" Width="710">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
@@ -139,7 +141,7 @@
                     <Button x:Name="btnSev" Content="7" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>
                         <Button x:Name="btnEigh" Content="8" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>
                         <Button x:Name="btnNine" Content="9" FontSize="16" Height="40" Width="40"  Margin="1.5" Click="NumPadClick"/>
-                        <Button x:Name="btnEscNP" Content="Esc" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                        <Button x:Name="btnEscNP" Content="Esc" FontSize="16" Height="40" Width="40" Margin="1.5" Click="PadEscClick"/>
                         <Button x:Name="btnFour" Content="4" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>
                         <Button x:Name="btnFive" Content="5" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>
                         <Button x:Name="btnSix" Content="6" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>
