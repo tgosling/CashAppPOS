@@ -145,7 +145,7 @@
                         <Button x:Name="btnFour" Content="4" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>
                         <Button x:Name="btnFive" Content="5" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>
                         <Button x:Name="btnSix" Content="6" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>
-                        <Button x:Name="btnBackNP" Content="Back" FontSize="16" Height="40" Width="40" Margin="1.5"/>
+                        <Button x:Name="btnBackNP" Content="Back" FontSize="16" Height="40" Width="40" Margin="1.5" Click="PadBacClick"/>
                         <Button x:Name="btnOne" Content="1" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>
                         <Button x:Name="btnTwo" Content="2" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>
                         <Button x:Name="btnThree" Content="3" FontSize="16" Height="40" Width="40" Margin="1.5" Click="NumPadClick"/>

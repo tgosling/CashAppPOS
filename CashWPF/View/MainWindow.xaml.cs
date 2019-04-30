@@ -35,5 +35,17 @@ namespace CashWPF
         {
             tbUserCurr.Text = "";
         }
+
+        private void PadBacClick(object sender, RoutedEventArgs e)
+        {
+            string s = tbUserCurr.Text;
+
+            if (s.Length > 1)
+                s = s.Substring(0, s.Length - 1);
+            else
+                s = "";
+
+            tbUserCurr.Text = s;
+        }
     }
 }
