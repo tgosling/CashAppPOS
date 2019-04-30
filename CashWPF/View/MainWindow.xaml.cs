@@ -24,5 +24,11 @@ namespace CashWPF
         {
             InitializeComponent();
         }
+
+        private void NumPadClick(object sender, RoutedEventArgs e)
+        {
+            Button b = (Button)sender;
+            tbUserCurr.Text += b.Content.ToString();
+        }
     }
 }
