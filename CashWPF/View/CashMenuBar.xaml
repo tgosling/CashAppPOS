@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="CashWPF.View.CashMenuBar"
+               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Menu>
+        <MenuItem Header="_File">
+            <MenuItem Header="Logout"/>
+            <Separator/>
+            <MenuItem Command="ApplicationCommands.Close" InputGestureText="Alt + f4"/>
+        </MenuItem>
+        <MenuItem Header="_Reports">
+            
+        </MenuItem>
+        <MenuItem Header="_Help">
+            <MenuItem Header="_Tip of the Day" Click="TipOfDay_Click"/>
+            <Separator/> 
+            <MenuItem Header="_About" Click="About_Click"/>
+        </MenuItem>
+    </Menu>
+</UserControl>
