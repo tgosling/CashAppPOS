@@ -10,38 +10,28 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CashWPF
+namespace CashWPF.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LoginWindow.xaml
     /// </summary>
     public partial class LoginWindow : Window
     {
-
         public LoginWindow()
         {
             InitializeComponent();
         }
 
-        private void InitializeComponent()
+        private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            var mainWin = new MainWindow { };
+            mainWin.Owner = this;
+            this.Hide();
+            mainWin.ShowDialog();
+            
+
         }
-
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-
-            App.Current.mainWindow.ShowDialog();
-            App.Current.loginWindow.Hide();
-
-            //else add message box user doesn't exist
-        }
-
-
-
-
     }
 }
