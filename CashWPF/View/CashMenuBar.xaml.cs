@@ -25,6 +25,13 @@ namespace CashWPF.View
             InitializeComponent();
         }
 
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            var logWin = new LoginWindow { };
+            logWin.ShowDialog();
+        }
+
         private void About_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Welcome to Cash WPF app", "About");

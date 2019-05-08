@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Menu>
         <MenuItem Header="_File">
-            <MenuItem Header="Logout"/>
+            <MenuItem Header="Logout" Click="Logout_Click"/>
             <Separator/>
             <MenuItem Command="ApplicationCommands.Close" InputGestureText="Alt + f4"/>
         </MenuItem>
