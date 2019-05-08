@@ -28,8 +28,12 @@ namespace CashWPF.View
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            var logWin = new LoginWindow { };
-            logWin.ShowDialog();
+            if(MessageBox.Show("Are you sure you want to logout?", "Confirm", MessageBoxButton.YesNo)==MessageBoxResult.Yes)
+            {
+                var logWin = new LoginWindow { };
+                logWin.ShowDialog();
+            }
+            
         }
 
         private void About_Click(object sender, RoutedEventArgs e)

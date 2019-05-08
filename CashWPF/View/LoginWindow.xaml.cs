@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using CashWPF.ViewModel;
+using CashWPF.Helpers;
 
 namespace CashWPF.View
 {
@@ -32,8 +33,17 @@ namespace CashWPF.View
                  
             var mainWin = new MainWindow { };
             mainWin.Owner = this;
-            this.Hide();
-            mainWin.ShowDialog();
+            if(Helpers.WindowHelper.IsWindowOpen<Window>("Point of Sale"))
+            {
+                MessageBox.Show("Window is already Open");
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Poo");
+                this.Hide();
+                mainWin.ShowDialog();
+            }
         }
     }
 }
