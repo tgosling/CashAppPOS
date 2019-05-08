@@ -25,6 +25,8 @@ namespace CashWPF
             InitializeComponent();
         }
 
+        //Number Pad Click handlers
+        #region NumBadButtons
         private void NumPadClick(object sender, RoutedEventArgs e)
         {
             Button b = (Button)sender;
@@ -47,5 +49,16 @@ namespace CashWPF
 
             tbUserCurr.Text = s;
         }
+        #endregion
+
+        //Menu Bar Click Handlers
+        #region MenuBar
+        private void ApplicationClose(object sender, ExecutedRoutedEventArgs e)
+        {
+            Close();
+        }
+
+       
+        #endregion
     }
 }

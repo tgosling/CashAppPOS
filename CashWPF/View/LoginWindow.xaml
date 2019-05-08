@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CashWPF.View"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="250" Width="450">
-    <Grid>
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="Point of Sale - Login" Height="250" Width="450">
+    <Grid Background="LightGray">
         <StackPanel Name="loginPanel" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label Content="Cash Point of Sale" Foreground="#CBA300" FontFamily="Verdana" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <Label Content="Cash Point of Sale" Foreground="#CBA300" FontFamily="Verdana" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center"/>
             <StackPanel Orientation="Horizontal">
                 <Label Content="Username" Foreground="#CBA300" FontFamily="Verdana" FontWeight="Bold"/>
                 <TextBox Text="" x:Name="tbUserNamLogin" Width="270" Margin="10,0,0,0" MaxLength="50"/>

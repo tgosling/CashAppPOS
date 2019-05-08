@@ -4,25 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CashWPF"
+        xmlns:local1="clr-namespace:CashWPF.View"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         Title="Point of Sale" Height="450" Width="710">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close"
+                        Executed="ApplicationClose"/>
+    </Window.CommandBindings>
+    
     <DockPanel>
-        <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File">
-             
-            </MenuItem>
-            <MenuItem Header="_Reports">
-              
-            </MenuItem>
-            <MenuItem Header="_Modules">
-                <MenuItem Header="_About" />
-            </MenuItem>
-            <MenuItem Header="_Help">
-                <MenuItem Header="_About"/>
-            </MenuItem>
-        </Menu>
+        <local1:CashMenuBar x:Name="menu" DockPanel.Dock="Top" />
+
         <Grid Background="WhiteSmoke">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="320"/>

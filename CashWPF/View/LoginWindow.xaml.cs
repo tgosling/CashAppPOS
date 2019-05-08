@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using CashWPF.ViewModel;
 
 namespace CashWPF.View
 {
@@ -19,19 +20,20 @@ namespace CashWPF.View
     /// </summary>
     public partial class LoginWindow : Window
     {
+      
         public LoginWindow()
         {
             InitializeComponent();
+            
         }
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
+                 
             var mainWin = new MainWindow { };
             mainWin.Owner = this;
             this.Hide();
             mainWin.ShowDialog();
-            
-
         }
     }
 }
