@@ -15,6 +15,12 @@ namespace CashWPF.ViewModel
         public List<Employee> empList { get; set; }
         public int loggedInUser { get; set; }
 
+       protected void OnStartup(StartupEventArgs e)
+        {
+            empList = new List<Employee>();
+            loadEmployees();
+        }
+
         //Checks to see if the employee is valid in list of employees
         public bool checkLogin(string userN, string passW)
         {
@@ -33,13 +39,13 @@ namespace CashWPF.ViewModel
 
 
 
-        public void loadUsers()
+        public void loadEmployees()
         {
             try
             {
-                if (File.Exists("users.json"))
+                if (File.Exists("employees.json"))
                 {
-                    string jsonString = File.ReadAllText("users.json");
+                    string jsonString = File.ReadAllText("employees.json");
                     empList = JsonConvert.DeserializeObject<List<Employee>>(jsonString);
                 }
             }
